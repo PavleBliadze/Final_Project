@@ -144,15 +144,15 @@ class RecipeManager:
             print(f"Error loading from file: {e}")
 
     def load_default_recipes(self):
-    default_recipes = [
+       default_recipes = [
         Recipe("Khachapuri", "Georgian", [Ingredient("Flour", "500g"), Ingredient("Cheese", "300g"), Ingredient("Egg", "1")], "Mix flour, cheese, and egg together. Knead the dough and let it rest. Shape the dough into a round shape and fill with cheese. Bake until golden brown."),
         Recipe("Khinkali", "Georgian", [Ingredient("Flour", "300g"), Ingredient("Meat", "200g"), Ingredient("Onion", "1")], "Mix flour, meat, and onion together. Knead the dough and let it rest. Shape the dough into dumplings and boil them."),
         Recipe("Tacos", "Mexican", [Ingredient("Tortilla", "4"), Ingredient("Chicken", "200g"), Ingredient("Cheese", "100g")], "Fill tortillas with chicken and cheese."),
         Recipe("Enchiladas", "Mexican", [Ingredient("Tortilla", "6"), Ingredient("Beef", "300g"), Ingredient("Tomato", "400g")], "Fill tortillas with beef and tomato sauce. Top with cheese and bake."),
         Recipe("Sushi", "Japanese", [Ingredient("Rice", "200g"), Ingredient("Fish", "200g"), Ingredient("Seaweed", "3 sheets")], "Roll the rice and fish in seaweed."),
         Recipe("Ramen", "Japanese", [Ingredient("Noodles", "200g"), Ingredient("Broth", "1L"), Ingredient("Pork", "100g")], "Cook noodles in broth. Top with pork and other desired toppings.")
-    ]
-    for recipe in default_recipes:
+      ]
+       for recipe in default_recipes:
         self.add_recipe(recipe)
 
 def print_menu():
